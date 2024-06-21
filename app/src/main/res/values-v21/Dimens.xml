@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <dimen name="toolbar_search_view_layout_margin">8dp</dimen>
+    <dimen name="searchview_layout_margin">5dp</dimen>
+    <dimen name="gallery_promo_layout_margin">4dp</dimen>
+    <dimen name="switcher_min_with">52dp</dimen>
+
+</resources>

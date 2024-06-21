@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BottomSheetItemLayout">
+    <ImageView  style="@style/BottomSheetItemIcon"
+        android:src="@drawable/ic_bottom_sheet_photo_camera_black"
+        android:id="@+id/imageView"/>
+    <TextView style="@style/BottomSheetItemText"
+        android:contentDescription="apps.action.takephoto"
+        android:id="@+id/textView"/>
+</LinearLayout>

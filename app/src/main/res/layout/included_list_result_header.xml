@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_result_header_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="5dp"
+    android:id="@+id/vgResultStatus"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/rootChipCategoriesLayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/tvFilter"
+        style="@style/BlueButton"
+        android:layout_width="wrap_content"
+        android:contentDescription="apps.filter"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:textSize="@dimen/textsize_normal"/>
+
+</LinearLayout>

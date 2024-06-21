@@ -1,0 +1,18 @@
+<resources>
+    <style name="textview_semibold">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="textview_light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="white_cardview_button_no_padding" parent="white_cardview_button_simple">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="row_textlayout_edittext_search_chip_styled" parent="row_textlayout_edittext_search_chip">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+</resources>

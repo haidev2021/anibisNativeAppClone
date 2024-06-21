@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlModeSwitch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/new_search_mask_item_height_search"
+    android:background="?attr/selectableItemBackground">
+
+    <RadioGroup
+        android:id="@+id/rgCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/rbSmallCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/new_search_mask_item_height_search"
+            android:button="@drawable/radio_small_card"/>
+
+        <RadioButton
+            android:id="@+id/rbBigCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/new_search_mask_item_height_search"
+            android:button="@drawable/radio_big_card"
+            android:paddingRight="10dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/row_label_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="apps.search.filter.switchview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

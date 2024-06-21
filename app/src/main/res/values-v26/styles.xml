@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <!--
+          Base application theme for API 26+. This theme replaces
+          AnibisTheme from resources/values/styles.xml on API 21+ devices.
+      -->
+    <style name="AnibisTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowSplashscreenContent">@drawable/splash_background</item>
+    </style>
+
+</resources>

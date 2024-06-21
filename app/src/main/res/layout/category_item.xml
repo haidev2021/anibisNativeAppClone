@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCategory"
+    style="@style/search_row"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/vSubPadding"
+        android:layout_width="@dimen/margin"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/cattext"
+        style="@style/textview_large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Name"
+        android:textColor="@color/normal_category"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_category_check"
+            android:focusable="false"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_category_expand"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+</LinearLayout>

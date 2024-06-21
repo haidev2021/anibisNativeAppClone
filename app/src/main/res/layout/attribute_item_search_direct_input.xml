@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            style="@style/search_row_value_search">
+
+            <View
+                android:id="@+id/focusable"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label"
+                        style="@style/row_label_search"/>
+
+                    <EditText
+                        android:id="@+id/value"
+                        style="@style/row_textlayout_edittext_search"/>
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/error"
+                style="@style/search_row_error"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/x"
+            style="@style/search_row_x_icon"/>
+
+    </LinearLayout>
+
+    <View style="@style/search_mask_divider_no_padding" android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+    </RelativeLayout>
+
+</RelativeLayout>

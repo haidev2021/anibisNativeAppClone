@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+    </style>
+
+    <style name="textview_clickable_list_header">
+        <item name="android:textSize">@dimen/textsize_normal</item>
+        <item name="android:textColor">@color/textclickable_normal</item>
+    </style>
+
+</resources>

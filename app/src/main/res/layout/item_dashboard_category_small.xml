@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/dashboard_menu_row">
+    <ImageView
+        style="@style/dashboard_menu_icon"
+        android:src="@drawable/ic_menu_home_rent"
+        android:id="@+id/ivCatImage" />
+    <TextView
+        style="@style/menu_category_small"
+        android:id="@+id/tvCatName"
+        android:text="contentDescription"
+        android:layout_marginTop="@dimen/margin_half"
+        android:maxLines="2"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/insertion_date_height"
+    android:layout_alignParentBottom="true"
+    android:paddingRight="@dimen/margin"
+    android:paddingLeft="@dimen/margin"
+    android:background="#66ebebeb"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/txtExpDate"
+        style="@style/textview_smaller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_gray"
+        android:layout_gravity="left|center_vertical"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/tvStatus"
+        style="@style/textview_smallest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="apps.active"
+        android:textColor="@color/white"
+        android:background="@color/main_green"
+        android:layout_gravity="right|center_vertical"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:maxLines="1"
+        android:textAllCaps="true"/>
+</RelativeLayout>

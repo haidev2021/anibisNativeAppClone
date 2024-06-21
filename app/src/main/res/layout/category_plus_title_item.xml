@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llSuggestionLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            style="@style/search_row"
+            android:gravity="center_horizontal"
+            android:background="@color/transparent">
+            <TextView
+                style="@style/list_title"
+                android:contentDescription="apps.insertion.category.suggestion"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_primary"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/search_row"
+        android:gravity="center_horizontal"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/title"
+            style="@style/list_title"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_primary"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/category_item" />
+
+</LinearLayout>

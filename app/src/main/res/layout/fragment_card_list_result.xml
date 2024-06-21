@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@null"
+        android:clickable="true"
+        android:descendantFocusability="beforeDescendants"
+        android:dividerHeight="0dp"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        android:paddingTop="@dimen/search_result_header_sum"
+        android:paddingBottom="63dp"
+        android:clipToPadding="false"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/search_result_header_sum">
+
+        <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/margin"/>
+
+        <TextView
+          android:id="@+id/txtLoading"
+          style="@style/textview"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/margin" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/vsNoResults"
+        android:layout="@layout/search_list_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/searchview_toolbar_height"/>
+
+    <View
+        android:id="@+id/vBuffer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_half"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

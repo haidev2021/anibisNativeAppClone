@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flDetailGallery"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/AnibisTheme.WhiteAccent"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/dummy"
+        android:layout_height="@dimen/dummy"/>
+
+</FrameLayout>

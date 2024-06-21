@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_transparent">#88333333</color>
+
+    <!--<color name="theme_primary">#ff9800</color>-->
+    <!--<color name="theme_primary_dark">#f57c00</color>-->
+    <!--<color name="theme_accent">#1976d2</color>-->
+
+    <color name="theme_primary">#3266cc</color>
+    <color name="theme_primary_shadowed">#003b9a</color>
+    <color name="theme_primary_dark">#003b9a</color>
+    <color name="theme_accent">#0066cb</color>
+    <color name="orange_accent">#f9a825</color>
+
+    <color name="theme_accent_pressed">#f9a825</color>
+    <color name="main_green_pressed">#1b7440</color>
+
+    <color name="general_gray_bg">#ececec</color>
+    <color name="textcolor_highlight">#793d18</color>
+    <color name="textcolor_regular">#333333</color>
+
+    <color name="textclickable_normal">@color/theme_accent</color>
+    <color name="textclickable_pressed">#f9a825</color>
+
+    <color name="menu_press">#80CEEB</color>
+
+    <color name="sliding_cart_badge_bg">#E5E5E5</color>
+
+    <!--text color-->
+    <!--<color name="theme_accent">#ff0066cc</color>-->
+    <color name="light_black">#4A4A4A</color>
+    <color name="main_gray">#ff757575</color>
+    <color name="light_gray">#ffa0a0a0</color>
+    <color name="lighter_gray">#ffbcbcbc</color>
+    <color name="banned_category">#999999</color>
+    <color name="normal_category">#222222</color>
+    <color name="text_main_gray">#7b7b7b</color>
+    <color name="text_darker_gray">#4a4a4a</color>
+    <color name="text_light_gray">#969ea2</color>
+    <color name="text_dark_red">#dd2c00</color>
+    <color name="text_black">#4a4a4a</color>
+
+    <!--Text: Roboto Regular 16sp,  #000 87%-->
+    <color name="text_bottom_sheet_item">#de000000</color>
+
+    <color name="text_bottom_sheet_sorting_item">#797979</color>
+    <color name="text_bottom_sheet_sorting_selected_item">#202020</color>
+
+    <!--Title (optional): Roboto Regular 16sp, #000 54%-->
+    <color name="text_bottom_sheet_title">#8a000000</color>
+    <color name="text_bottom_sheet_sorting_title">#494949</color>
+
+    <!-- line color -->
+    <color name="line_list_divider">#ffd8d8d8</color>
+    <color name="line_detail_section_divider">#ffd8d8d8</color>
+
+
+    <!-- background color -->
+
+    <color name="list_advert_white">#ffffffff</color>
+    <color name="list_advert_gray">#ffebebeb</color>
+    <color name="list_advert_gold">#fffff8e7</color>
+    <color name="list_advert_gold_alpha">#66fff8e7</color>
+    <color name="main_green">#ff27ae60</color>
+    <color name="main_gray_bg">#ffebebeb</color>
+    <color name="list_header_gray_bg">#dddddd</color>
+    <color name="image_gray_bg">#ffe2e2e2</color>
+    <color name="light_gray_bg">#fff1f1f1</color>
+    <color name="snack_bar_bg">#333333</color>
+
+    <color name="main_red">#ff0000</color>
+    <color name="dark_red">#dd0000</color>
+    <color name="error_red">#D01D00</color>
+    <color name="dark_red_trans">#ddcc2222</color>
+    <color name="main_orange">#f9a825</color>
+    <color name="main_brown">#ffb71c1c</color>
+
+    <color name="loading_color">#c5c5c5</color>
+    <color name="insert_image_bg">#e0e0e0</color>
+
+    <color name="tab_bg">#f8f8f8</color>
+    <color name="tab_tint_leave">#717171</color>
+    <color name="tab_tint_focus">#3266cc</color>
+
+    <color name="debug_g">#00ff00</color>
+    <color name="debug_b">#0000ff</color>
+    <color name="debug_r">#ff0000</color>
+    <color name="debug_y">#ffff00</color>
+    <color name="debug_x">#ff00ff</color>
+    <color name="debug_z">#00ffff</color>
+</resources>

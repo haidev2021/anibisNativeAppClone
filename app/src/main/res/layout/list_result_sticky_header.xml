@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/margin_half"
+    android:paddingRight="@dimen/margin_half"
+    android:id="@+id/vgResultStatus"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_half"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTotalCount"
+            style="@style/textview_large"
+            android:text="erfergerg"/>
+
+        <TextView
+            style="@style/textview_clickable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSort"
+            android:contentDescription="apps.action.sort"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:paddingTop="@dimen/margin_quarter"
+            android:paddingBottom="@dimen/margin_quarter"
+            android:text="erfergerg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/menu_margin"
+    android:insetRight="@dimen/menu_margin" >
+
+    <shape
+        android:shape="line" >
+        <stroke
+            android:dashGap="1dp"
+            android:dashWidth="1.5dp"
+            android:width="0dp"
+            android:color="@color/line_list_divider" />
+            <size android:height="1.5dp" />
+
+    </shape>
+
+</inset>

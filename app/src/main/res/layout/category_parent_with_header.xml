@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llHeader"
+        style="@style/search_row"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/margin"
+        android:background="@color/general_gray_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Last search"
+            style="@style/textview_large"
+            android:contentDescription="apps.categories"/>
+    </RelativeLayout>
+
+    <View style="@style/menu_divider_full_width"/>
+
+    <include layout="@layout/category_item" />
+
+    <View style="@style/menu_divider"/>
+
+</LinearLayout>

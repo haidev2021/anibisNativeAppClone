@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.haidev.kanibis.ui.searchList.view.VerticalScrollView
+        android:id="@+id/svMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/focusable"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <requestFocus />
+            </View>
+
+            <LinearLayout
+                android:id="@+id/llSearchText"
+                style="@style/search_view_container">
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="3dp"
+                    android:layout_margin="@dimen/searchview_layout_margin">
+                    <androidx.appcompat.widget.SearchView
+                        style="@style/search_view"
+                        android:id="@+id/MenuKeywordSearchView"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/search_section_header"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+                <TextView
+                    style="@style/list_title"
+                    android:text="Top-Kategorien"
+                    android:contentDescription="apps.inallcategories" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/theme_primary"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rootCategoriesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    style="@style/search_section_header"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone">
+                    <TextView
+                        style="@style/list_title"
+                        android:contentDescription="apps.filter"
+                        android:text="Top-Kategorien" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/theme_primary"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCommonAttLayout"
+                    style="@style/group_layout"/>
+
+                <LinearLayout
+                    android:id="@+id/llPriceLayout"
+                    style="@style/group_layout"/>
+
+                <LinearLayout
+                    android:id="@+id/llCategoryAttLayout"
+                    style="@style/group_layout"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/llLanguageLayout"
+                    style="@style/group_layout"/>
+
+                <LinearLayout style="@style/group_layout_top_double_divider">
+                    <include layout="@layout/included_list_view_mode_switch_view"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buffer"
+                style="@style/group_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/main_gray_bg"/>
+
+        </LinearLayout>
+    </com.haidev.kanibis.ui.searchList.view.VerticalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/vgSearchButton"
+        style="@style/search_row"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/BottomPaddingBlueButton"
+            android:contentDescription="apps.action.apply"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgSearchLoading"
+        style="@style/search_row"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            style="@style/BottomPaddingBlueButton"
+            android:background="@color/theme_accent">
+
+            <ImageView
+                android:id="@+id/imgLoading"
+                android:layout_width="34dp"
+                android:layout_height="8dp"
+                android:background="@drawable/loading_three_dots"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

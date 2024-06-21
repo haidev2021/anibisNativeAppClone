@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lvCategory"
+        style="@style/category_selector_list"/>
+
+    <LinearLayout
+        style="@style/search_row"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="-1dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="@style/BlueButton"
+            android:id="@+id/btnShowWithCount"
+            android:contentDescription="apps.action.done"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/edge_margin"/>
+    </LinearLayout>
+
+</RelativeLayout>

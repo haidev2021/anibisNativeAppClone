@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llHeader"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_filter_toolbar_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/theme_primary">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_x_white"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_marginLeft="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/search_filter_toolbar_height"
+        android:layout_weight="0.5"
+        style="@style/textview_semibold"
+        android:textSize="@dimen/textsize_ultra_large"
+        android:layout_marginLeft="@dimen/edge_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imgTopAction"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:contentDescription="apps.action.resetfilters"
+        android:textAllCaps="true"
+        android:layout_marginRight="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/white"
+        android:src="@drawable/ic_dust_pin_light"
+        android:background="?selectableItemBackgroundBorderless"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnuTabSearch"
+        android:title="apps.search"
+        android:icon="@drawable/tabs_ic_search" />
+    <item
+        android:id="@+id/mnuTabInsertion"
+        android:title="apps.insertion"
+         android:icon="@drawable/tabs_ic_new_listing"/>
+    <item
+        android:id="@+id/mnuTabNotification"
+        android:title="apps.notification.title"
+         android:icon="@drawable/tabs_ic_pn_active"/>
+    <item
+        android:id="@+id/mnuTabMyAnibis"
+        android:title="apps.myanibis"
+        android:icon="@drawable/tabs_ic_my_anibis"/>
+
+</menu>

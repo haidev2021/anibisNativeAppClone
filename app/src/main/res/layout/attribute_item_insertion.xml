@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/edge_margin"
+        android:paddingRight="@dimen/edge_margin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            style="@style/search_row_value">
+
+            <View
+                android:id="@+id/focusable"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+<!--            <ch.anibis.anibis.ui.helper.view.CustomTextLayout-->
+<!--                android:id="@+id/text_input_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingRight="0dp"-->
+<!--                app:hintTextAppearance="@style/FloatingLabel"-->
+<!--                app:errorTextAppearance="@style/ErrorStyle"-->
+<!--                android:textColorHint="@color/light_gray">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/value"-->
+<!--                    style="@style/row_textlayout_edittext"/>-->
+
+<!--            </ch.anibis.anibis.ui.helper.view.CustomTextLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/text_input_layout">
+
+                <ViewStub
+                    android:id="@+id/vsLegend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/attribute_item_legend"/>
+
+                <TextView
+                    android:id="@+id/error"
+                    style="@style/search_row_error"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/x"
+            style="@style/search_row_x_icon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/nestedAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/searchview_toolbar_height"
+        android:stateListAnimator="@drawable/header_always_elevated">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/list_header_gray_bg">
+
+            <include layout="@layout/included_list_result_header" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/vgFragmentContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:id="@+id/rlButtonsExpanded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            style="@style/search_row"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_marginTop="-1dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/tvSaveSearchExpanded"
+                style="@style/BottomPaddingBlueButton"
+                android:contentDescription="apps.notification.enable"
+                android:drawableLeft="@drawable/ic_pn_inactive"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/tvGreenSaveSearchExpanded"
+                style="@style/BottomPaddingGreenButton"
+                android:contentDescription="apps.notification.enabled"
+                android:drawableLeft="@drawable/ic_pn_check_mark"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

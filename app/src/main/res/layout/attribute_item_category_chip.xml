@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/category_chip_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_chip_height"
+        android:orientation="horizontal"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/mainChip"
+            style="@style/category_chip"
+            android:layout_height="@dimen/category_chip_height"
+            android:background="@drawable/shape_chip_drawable_left">
+
+            <View
+                android:id="@+id/focusable"
+                style="@style/attribute_item_focusable"/>
+
+                <EditText
+                    android:id="@+id/value"
+                    style="@style/row_textlayout_edittext_search_chip_styled"
+                    android:layout_width="wrap_content"
+                    android:textColorHint="@color/theme_accent"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/x"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_round_delete_black"
+            android:background="@drawable/shape_chip_drawable_right"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="0dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

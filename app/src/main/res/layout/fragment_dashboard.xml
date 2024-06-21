@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="326dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/vLogo"
+        android:layout_width="190dp"
+        android:layout_height="@dimen/dashboard_logo_layout_height"
+        android:src="@drawable/logo_anibis_long"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/llSearchBox"
+        android:layout_below="@+id/vLogo"
+        style="@style/search_view_container"
+        android:layout_marginTop="@dimen/minus_margin_half">
+
+        <View
+            android:id="@+id/vContextAnchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="right"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSearch"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp"
+            android:layout_margin="@dimen/searchview_layout_margin">
+
+            <RelativeLayout
+                style="@style/search_view">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_home_keyword_search"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/big_edge_margin"/>
+
+                <TextView
+                    style="@style/search_view"
+                    android:contentDescription="apps.searchkeyword"
+                    android:text="hint"
+                    android:textColor="#919191"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="56dp"
+                    android:textSize="@dimen/textsize_large"/>
+
+                <View
+                    android:id="@+id/vOpenSearch"
+                    style="@style/search_view"
+                    android:clickable="true"
+                    android:background="@color/transparent"/>
+
+                <ImageView
+                    android:id="@+id/ivContextMenu"
+                    android:layout_width="40dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_context_menu"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:layout_below="@+id/llSearchBox"
+        android:layout_marginTop="@dimen/margin_half">
+
+        <include layout="@layout/dashboard_category_phone" />
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llSearchBox">
+
+        <include layout="@layout/dashboard_category_tablet" />
+
+    </LinearLayout>
+
+</RelativeLayout>

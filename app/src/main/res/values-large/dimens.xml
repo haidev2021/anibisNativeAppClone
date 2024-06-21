@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="insertion_no_image_icon_width">220dp</dimen>
+    <dimen name="insertion_no_image_icon_height">180dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_width">55dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_group_width">275dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_group_height">180dp</dimen>
+</resources>

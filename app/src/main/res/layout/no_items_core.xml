@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/edge_margin">
+    <include
+        android:id="@+id/warning"
+        layout="@layout/warning" />
+    <View
+        style="@style/max_width_divider"
+        android:layout_marginTop="@dimen/big_edge_margin" />
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/big_edge_margin"
+        android:layout_marginTop="@dimen/big_edge_margin"
+        style="@style/white_cardview_button_no_padding" />
+</LinearLayout>

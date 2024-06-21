@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/llListHeaderDivider"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="@color/main_gray_bg"
+        android:gravity="bottom">
+        <View
+            style="@style/item_list_divider"
+            android:background="#e0e0e0"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/list_insertion_item_main_info"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="-5dp">
+        <include
+            layout="@layout/list_insertion_item_promo_state"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInsertionOnlineFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/insertion_date_height"
+        android:background="@color/white">
+        <include
+            layout="@layout/list_insertion_item_date_state"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llListFooterDivider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/main_gray_bg">
+        <View
+            style="@style/item_list_divider"
+            android:background="#d8d8d8" />
+    </LinearLayout>
+
+</LinearLayout>

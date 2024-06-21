@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/searchview_toolbar_height"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:stateListAnimator="@drawable/appbar_always_elevated">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/searchview_toolbar_height"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvSearch"
+                    style="@style/search_bar_card_view"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="3dp"
+                    android:transitionName="SearchView">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:id="@+id/rlAnchor"/>
+
+                        <RelativeLayout
+                            style="@style/search_view"
+                            android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/ivSearchBarBack"
+                                    style="@style/button_search_bar_back"/>
+
+                                <com.haidev.kanibis.ui.searchList.view.is24location.ISAutoComplete
+                                    android:id="@+id/autoCompleteView"
+                                    style="@style/search_bar_auto_complete_view"
+                                    android:dropDownAnchor="@+id/rlAnchor"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:layout_marginRight="55dp"/>
+
+                                <ImageView
+                                    android:id="@+id/ivDelete"
+                                    style="@style/search_bar_auto_complete_delete"/>
+
+                                <androidx.appcompat.widget.SearchView
+                                    android:id="@+id/MenuKeywordSearchView"
+                                    style="@style/search_bar_search_view"
+                                    app:theme="@style/AnibisTheme.Transparent"/>
+
+                        </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

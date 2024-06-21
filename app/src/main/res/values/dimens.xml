@@ -1,0 +1,140 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- dialog margin -->
+    <dimen name="dialog_textview_margin">16dp</dimen>
+    <dimen name="big_text_big_button_space">24dp</dimen>
+    <dimen name="dialog_edittext_margin">4dp</dimen>
+    <dimen name="dialog_line_margin">8dp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="text_top_edge_margin">10dp</dimen>
+    <dimen name="edge_margin">15dp</dimen>
+    <dimen name="dashboard_list_loading_bottom_padding">45dp</dimen>
+    <dimen name="edit_text_edge_margin">13dp</dimen>
+    <dimen name="text_view_edge_margin">11dp</dimen>
+    <dimen name="edge_margin_button">14dp</dimen>
+    <dimen name="base_button_height">44dp</dimen>
+    <dimen name="minus_edge_margin">-15dp</dimen>
+    <dimen name="big_edge_margin">17dp</dimen>
+    <dimen name="extra_big_edge_margin">25dp</dimen>
+    <dimen name="bigger_edge_margin">20dp</dimen>
+    <dimen name="partner_logo_height">43dp</dimen>
+    <dimen name="partner_logo_width">104dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="search_row_vertical_padding">12dp</dimen>
+    <dimen name="search_row_vertical_padding_new_search">21dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin_quarter">4dp</dimen>
+    <dimen name="minus_margin_half">-8dp</dimen>
+    <dimen name="menu_margin">16dp</dimen>
+    <dimen name="insertion_date_height">35dp</dimen>
+    <dimen name="btn_post_h">48dp</dimen>
+    <dimen name="btn_user_contact_phone_top_margin">20dp</dimen>
+    <dimen name="dashboard_title_bottom_margin">12dp</dimen>
+    <dimen name="dashboard_section_top_margin">24dp</dimen>
+    <dimen name="chip_padding">7dp</dimen>
+    <dimen name="category_chip_height">32dp</dimen>
+    <dimen name="chip_corner_radius">20dp</dimen>
+
+    <dimen name="sliding_menu_item_height">48dp</dimen>
+    <dimen name="dashboard_item_height">116dp</dimen>
+    <dimen name="my_anibis_item_height">64dp</dimen>
+    <dimen name="search_mask_item_height">58dp</dimen>
+    <dimen name="new_search_mask_item_height">70dp</dimen>
+    <dimen name="new_search_mask_item_height_search">65dp</dimen>
+    <dimen name="new_search_mask_item_height_search_minus_divider">64dp</dimen>
+    <dimen name="new_search_mask_item_height_minus_divider">69dp</dimen>
+    <dimen name="arrow_to_web_width">19dp</dimen>
+    <dimen name="extra_spacing_menu_category_text">4dp</dimen>
+    <dimen name="insertion_no_image_icon_width">100dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_width">25dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_group_width">88dp</dimen>
+    <dimen name="insertion_no_image_cross_icon_group_height">88dp</dimen>
+    <dimen name="insertion_no_image_icon_height">82dp</dimen>
+    <dimen name="text_history_horizontal_margin">56dp</dimen>
+    <dimen name="dashboard_logo_layout_height">108dp</dimen>
+
+    <!-- textview -->
+    <dimen name="textsize_large">16sp</dimen>
+    <dimen name="textsize_extra_large">19sp</dimen>
+    <dimen name="textsize_ultra_large">20sp</dimen>
+    <dimen name="textsize_normal">15sp</dimen>
+    <dimen name="textsize_small">14sp</dimen>
+    <dimen name="textsize_smaller">12sp</dimen>
+    <dimen name="textsize_smallest">11sp</dimen>
+    <dimen name="textsize_sliding_badge">18sp</dimen>
+    <dimen name="textsize_actionbar">20sp</dimen>
+    <dimen name="textsize_tab">11sp</dimen>
+    <dimen name="textsize_native_ad">10sp</dimen>
+
+    <!-- image -->
+    <dimen name="imgsize_dashboard_icon">60dp</dimen>
+    <dimen name="imgsize_dashboard_version_four_icon">42dp</dimen>
+    <dimen name="my_anibis_icon">42dp</dimen>
+    <dimen name="detail_sms_icon_w">104dp</dimen>
+    <dimen name="detail_sms_icon_h">34dp</dimen>
+    <dimen name="search_row_x_icon_w">40dp</dimen>
+    <dimen name="ic_gallery_close_size">24dp</dimen>
+
+    <!-- <dimen name="tablet_big_layout_top_bottom_margin">10dp</dimen> -->
+
+
+    <dimen name="list_item_image_width">120dp</dimen>
+    <dimen name="list_item_image_height">90dp</dimen>
+
+    <dimen name="dashboard_favorite_item_image_width">160dp</dimen>
+    <dimen name="dashboard_favorite_item_image_height">120dp</dimen>
+
+    <dimen name="vertical_list_small_card_height">88dp</dimen>
+
+    <dimen name="list_big_item_image_height">194dp</dimen>
+    <dimen name="list_big_item_no_image_height">96dp</dimen>
+
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="home_app_bar_height">56dp</dimen>
+
+    <dimen name="gallery_promo_item_width">120dp</dimen>
+    <dimen name="gallery_promo_item_height">157dp</dimen>
+    <dimen name="gallery_promo_rv_height_with_bottom_padding">174dp</dimen>
+
+    <dimen name="dashboard_favorite_item_width">160dp</dimen>
+    <dimen name="dashboard_favorite_item_height">210dp</dimen>
+    <dimen name="dashboard_favorite_rv_height_with_bottom_padding">219dp</dimen>
+
+    <dimen name="gallery_promo_rv_bottom_padding">12dp</dimen>
+
+    <!--    card view display adapting (android 4 vs android 5)-->
+    <dimen name="toolbar_search_view_layout_margin">4dp</dimen>
+    <dimen name="toolbar_search_view_dropdown_layout_margin">8dp</dimen>
+    <dimen name="searchview_layout_margin">0dp</dimen>
+    <dimen name="searchview_container_height">73dp</dimen>
+    <dimen name="searchview_toolbar_height">66dp</dimen>
+    <dimen name="button_search_job_expand_height">46dp</dimen>
+    <dimen name="search_result_header_height">48dp</dimen>
+    <dimen name="search_result_header_sum">114dp</dimen>
+    <dimen name="search_filter_toolbar_height">56dp</dimen>
+    <dimen name="gallery_promo_layout_margin">0dp</dimen>
+    <dimen name="big_card_vertical_margin">8dp</dimen>
+    <dimen name="big_card_horizontal_margin">8dp</dimen>
+    <dimen name="small_card_vertical_margin">4dp</dimen>
+    <dimen name="small_card_vertical_list_padding">10dp</dimen>
+    <dimen name="big_card_vertical_list_padding">8dp</dimen>
+
+    <!-- textview -->
+
+    <!--divider-->
+
+    <dimen name="dummy">1dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="list_vertical_padding">5dp</dimen>
+
+    <dimen name="big_card_photo_position_margin_offset">33dp</dimen>
+    <dimen name="switcher_min_with">43dp</dimen>
+
+    <dimen name="dashbard_item_item_version_four_height">64dp</dimen>
+
+    <dimen name="category_animation_translation_x">100dp</dimen>
+
+</resources>

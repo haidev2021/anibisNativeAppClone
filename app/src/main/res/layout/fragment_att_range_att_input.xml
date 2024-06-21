@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fragment_attribute"
+    android:id="@+id/root">
+    <include layout="@layout/included_fragment_attribute_title"/>
+    <include layout="@layout/dialog_range_att_input"/>
+
+    <RelativeLayout
+        style="@style/search_row"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginTop="-1dp"
+        android:gravity="bottom"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="14dp">
+
+        <Button
+            android:id="@+id/tvOk"
+            android:clickable="true"
+            android:focusable="true"
+            style="@style/BottomPaddingBlueButton"
+            android:contentDescription="apps.action.done"/>
+
+    </RelativeLayout>
+</LinearLayout>

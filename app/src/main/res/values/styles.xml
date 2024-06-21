@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AnibisTheme.WhiteAccent">
+    <item name="colorAccent">@color/loading_color</item> <!-- Whatever color you want-->
+</style>
+
+<style name="AnibisTheme.BlueAccent">
+    <item name="colorAccent">@color/theme_accent</item> <!-- Whatever color you want-->
+</style>
+
+<style name="AnibisTheme.Splash" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_background</item>
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+<style name="AnibisTheme.Transparent" parent="AnibisTheme.LightActionBar.Base">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@color/transparent</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="searchViewStyle">@style/AnibisTheme.SearchView</item>
+</style>
+
+<style name="AnibisTheme.SearchView" parent="Widget.AppCompat.SearchView.ActionBar">
+    <item name="suggestionRowLayout">@layout/custome_abc_search_dropdown_item_icons_2line</item>
+    <item name="searchIcon">@null</item>
+</style>
+
+<style name="AnibisTheme.Base.NotitleBar" parent="AnibisTheme.Base">
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+<style name="AnibisTheme.NoActionbar" parent="AnibisTheme">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+
+<style name="DateDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorPrimary">@color/theme_primary</item>
+    <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+    <item name="colorAccent">@color/theme_accent</item>
+</style>
+
+<style name="DropDownListViewStyle" parent="@style/Widget.AppCompat.ListView.DropDown">
+    <item name="android:background">@color/white</item>
+</style>
+
+<style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">@color/theme_accent</item>
+</style>
+
+    <!-- ActionBar styles -->
+<style name="MyActionBar"
+parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@drawable/actionbar_background</item>
+    <item name="background">@drawable/actionbar_background</item>
+</style>
+
+<style name="white_cardview_button_simple">
+<item name="android:minHeight">0dp</item>
+<item name="android:minWidth">0dp</item>
+<item name="android:layout_width">fill_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:background">@android:color/transparent</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+<item name="android:textAllCaps">true</item>
+</style>
+
+    <!--    <style name="white_cardview_green_text_button_no_padding" parent="white_cardview_button_no_padding">-->
+    <!--        <item name="android:textColor">@color/textcolor_green_clickable</item>-->
+    <!--    </style>-->
+<style name="white_cardview_button_no_padding" parent="white_cardview_button_simple">
+<item name="android:fontFamily">sans-serif-medium</item>
+</style>
+
+<style name="white_cardview_button" parent="white_cardview_button_no_padding">
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:paddingTop">9dp</item>
+<item name="android:paddingBottom">9dp</item>
+</style>
+
+<style name="detail_sub_title">
+<item name="android:textSize">@dimen/textsize_ultra_large</item>
+<item name="android:layout_marginBottom">5dp</item>
+<item name="android:layout_marginTop">@dimen/big_edge_margin</item>
+<item name="android:textColor">@android:color/black</item>
+</style>
+
+<style name="detail_plain_text">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@android:color/black</item>
+<item name="android:lineSpacingExtra">3dp</item>
+</style>
+
+<style name="detail_plain_text_semi_bold"  parent="textview_semibold">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@android:color/black</item>
+<item name="android:lineSpacingExtra">3dp</item>
+</style>
+
+<style name="list_text_light"  parent="textview_light">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@android:color/black</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview">
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_adtech_debug" parent="@style/textview">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:paddingLeft">@dimen/margin</item>
+<item name="android:paddingRight">@dimen/margin</item>
+<item name="android:background">@color/general_gray_bg</item>
+<item name="android:layout_gravity">center</item>
+</style>
+
+<style name="textview_bold" parent="@style/textview">
+<item name="android:textStyle">bold</item>
+</style>
+
+<style name="textview_dashboard_favorite_item">
+<item name="android:textSize">15sp</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_small">
+<item name="android:textSize">@dimen/textsize_small</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_agb">
+<item name="android:textSize">13sp</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_smaller">
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_smallest">
+<item name="android:textSize">@dimen/textsize_smallest</item>
+</style>
+
+<style name="textview_native_ad">
+<item name="android:textSize">@dimen/textsize_native_ad</item>
+</style>
+
+<style name="textview_error">
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:textColor">@color/text_dark_red</item>
+</style>
+
+<style name="textview_bluetitle" parent="@style/textview">
+<item name="android:textStyle">bold</item>
+<item name="android:textColor">@color/theme_accent</item>
+</style>
+
+<style name="textview_large">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_large_semi_bold" parent="textview_semibold">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_ultra_large">
+<item name="android:textSize">@dimen/textsize_ultra_large</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_large_bold">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textStyle">bold</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_extra_large_bold">
+<item name="android:textSize">@dimen/textsize_extra_large</item>
+<item name="android:textStyle">bold</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_clickable">
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+</style>
+
+<style name="textview_clickable_smallest_medium_allcaps" parent = "textview_semibold">
+<item name="android:textSize">@dimen/textsize_smallest</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+<item name="android:textAllCaps">true</item>
+</style>
+
+<style name="textview_clickable_small">
+<item name="android:textSize">@dimen/textsize_small</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+</style>
+
+<style name="textview_clickable_bold" parent = "textview_semibold">
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+</style>
+
+<style name="textview_clickable_large">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/textcolor_clickable</item>
+</style>
+
+<style name="textview_blue_large" parent = "textview_semibold">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_blue_large_regular">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_blue">
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_blue_small" parent="textview_blue_large">
+<item name="android:textSize">@dimen/textsize_small</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_blue_smaller" parent="textview_blue_large">
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="textview_blue_smallest" parent="textview_blue_large">
+<item name="android:textSize">@dimen/textsize_smallest</item>
+</style>
+
+<style name="textview_notification_badge" parent="textview_blue_smallest">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:background">@drawable/round_corner_badge_bg</item>
+<item name="android:padding">1dp</item>
+<item name="android:textColor">@color/white</item>
+<item name="android:minWidth">20dp</item>
+<item name="android:minHeight">20dp</item>
+<item name="android:text">10</item>
+<item name="android:gravity">center</item>
+</style>
+
+<style name="textview_title_black">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/textcolor_highlight</item>
+<item name="android:shadowColor">#ffffff</item>
+<item name="android:shadowDx">0</item>
+<item name="android:shadowDy">0.5</item>
+<item name="android:shadowRadius">1.0</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_title">
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/textcolor_regular</item>
+<item name="android:shadowColor">#ffffff</item>
+<item name="android:shadowDx">0</item>
+<item name="android:shadowDy">0.5</item>
+<item name="android:shadowRadius">1.0</item>
+</style>
+
+<style name="textview_title_blue">
+<item name="android:textStyle">bold</item>
+<item name="android:textColor">#0099cc</item>
+</style>
+
+<style name="textview_title_light_gray">
+<item name="android:textColor">@color/text_light_gray</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_footer_gray">
+<item name="android:textColor">@color/main_gray</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="textview_footer_black">
+<item name="android:textColor">@color/black</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="sliding_textview_item">
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:drawablePadding">@dimen/margin</item>
+<item name="android:textColor">@android:color/black</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="sliding_textview_badge">
+<item name="android:textSize">@dimen/textsize_sliding_badge</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:textColor">@android:color/black</item>
+</style>
+
+    <!-- search results -->
+
+<style name="edittext">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/textcolor_regular</item>
+<item name="android:textColorHint">@color/main_gray</item>
+<item name="android:background">@drawable/white_edit_text_bg_selector</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:minHeight">35dp</item>
+<item name="android:textCursorDrawable">@null</item>
+<item name="android:paddingTop">6dp</item>
+<item name="android:paddingBottom">6dp</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="row_edittext" parent="edittext">
+<item name="android:background">@drawable/white_edit_text_bg_selector</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:textColorHint">@color/light_gray</item>
+</style>
+
+<style name="message_row_edittext" parent="row_edittext">
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:layout_marginRight">@dimen/edge_margin</item>
+<item name="android:paddingTop">@dimen/search_row_vertical_padding</item>
+<item name="android:paddingBottom">@dimen/search_row_vertical_padding</item>
+</style>
+
+<style name="row_textlayout_edittext" parent="edittext">
+<item name="android:background">@drawable/white_edit_text_bg_selector</item>
+<item name="android:inputType">textMultiLine</item>
+<item name="android:drawableRight">@drawable/ic_attribute_expand</item>
+<item name="android:minHeight">0dp</item>
+<item name="android:textColorHint">@color/light_gray</item>
+<item name="android:paddingTop">5dp</item>
+<item name="android:paddingBottom">7dp</item>
+</style>
+
+<style name="row_textlayout_edittext_search" parent="row_textlayout_edittext">
+<item name="android:background">@null</item>
+<item name="android:textSize">@dimen/textsize_small</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:drawableRight">@null</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:paddingTop">0dp</item>
+<item name="android:paddingBottom">0dp</item>
+</style>
+
+<style name="row_textlayout_edittext_search_chip" parent="row_textlayout_edittext_search">
+<item name="android:layout_marginRight">10dp</item>
+<item name="android:layout_marginLeft">10dp</item>
+</style>
+
+<style name="row_label_search">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:textColor">@color/black</item>
+</style>
+
+<style name="attribute_item_focusable">
+<item name="android:layout_width">1dp</item>
+<item name="android:layout_height">0dp</item>
+<item name="android:focusable">true</item>
+<item name="android:focusableInTouchMode">true</item>
+</style>
+
+<style name="menu_divider">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">1dp</item>
+<item name="android:background">@color/line_detail_section_divider</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:layout_marginRight">@dimen/edge_margin</item>
+</style>
+
+<style name="menu_divider_full_width" parent="menu_divider">
+<item name="android:layout_marginLeft">0dp</item>
+<item name="android:layout_marginRight">0dp</item>
+</style>
+
+<style name="menu_divider_focusable" parent="menu_divider">
+<item name="android:background">@drawable/white_edit_text_bg_selector</item>
+<item name="android:layout_height">2dp</item>
+</style>
+
+<style name="menu_divider_no_padding">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">1dp</item>
+<item name="android:background">@color/line_detail_section_divider</item>
+</style>
+
+<style name="search_mask_divider_no_padding" parent="menu_divider_no_padding">
+<item name="android:background">@color/main_gray_bg</item>
+</style>
+
+<style name="detail_divider" parent="menu_divider">
+<item name="android:layout_marginTop">2dp</item>
+<item name="android:layout_marginBottom">2dp</item>
+</style>
+
+<style name="detail_divider_no_padding" parent="max_width_divider">
+<item name="android:layout_marginTop">2dp</item>
+<item name="android:layout_marginBottom">2dp</item>
+</style>
+
+<style name="max_width_divider">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">1dp</item>
+<item name="android:background">@color/line_detail_section_divider</item>
+</style>
+
+<style name="item_list_divider">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">1dp</item>
+<item name="android:background">?android:attr/listDivider</item>
+</style>
+
+<style name="group_divider">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/margin_half</item>
+<item name="android:background">@color/main_gray_bg</item>
+</style>
+
+<style name="group_layout">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:paddingTop">@dimen/margin_half</item>
+<item name="android:background">@drawable/group_with_top_divider</item>
+<item name="android:orientation">vertical</item>
+<item name="android:layout_marginTop">-1dp</item>
+</style>
+
+<style name="group_layout_top_double_divider" parent="group_layout">
+<item name="android:paddingTop">@dimen/edge_margin</item>
+<item name="android:background">@drawable/group_with_top_double_divider</item>
+</style>
+
+<style name="search_row_label">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@android:color/black</item>
+<item name="android:paddingTop">@dimen/search_row_vertical_padding</item>
+<item name="android:paddingBottom">@dimen/search_row_vertical_padding</item>
+</style>
+
+<style name="search_row_hint">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/light_gray</item>
+</style>
+
+<style name="search_row_value">
+<item name="android:layout_width">0dp</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_weight">1</item>
+<item name="android:paddingLeft">0dp</item>
+<item name="android:paddingTop">@dimen/search_row_vertical_padding_new_search</item>
+<item name="android:paddingBottom">0dp</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:layout_centerVertical">true</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:minHeight">@dimen/new_search_mask_item_height</item>
+<item name="android:gravity">bottom</item>
+</style>
+
+<style name="search_row_value_search" parent="search_row_value">
+<item name="android:paddingTop">0dp</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:minHeight">@dimen/new_search_mask_item_height_search</item>
+</style>
+
+<style name="category_chip">
+<item name="android:paddingTop">0dp</item>
+<item name="android:paddingBottom">0dp</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:paddingLeft">0dp</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:layout_centerVertical">true</item>
+<item name="android:textColor">@color/theme_accent</item>
+</style>
+
+<style name="search_row_error">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textColor">@color/error_red </item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:visibility">gone</item>
+<item name="android:layout_marginTop">-2dp</item>
+<item name="android:paddingTop">8dp</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="attribute_legend">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textColor">@color/error_red</item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:visibility">gone</item>
+<item name="android:layout_marginTop">-2dp</item>
+<item name="android:paddingTop">8dp</item>
+<item name="android:layout_below">@+id/text_input_layout</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="message_row_error" parent="search_row_error">
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:layout_marginRight">@dimen/edge_margin</item>
+<item name="android:visibility">gone</item>
+<item name="android:drawableRight">@null</item>
+</style>
+
+    <!--<item name="android:background">@drawable/error_bg</item>-->
+
+<style name="search_row_x_icon">
+<item name="android:layout_width">30dp</item>
+<item name="android:layout_height">40dp</item>
+<item name="android:src">@drawable/ic_delete_rounded</item>
+<item name="android:layout_gravity">bottom</item>
+<item name="android:paddingLeft">10dp</item>
+<item name="android:paddingRight">0dp</item>
+<item name="android:paddingTop">10dp</item>
+<item name="android:paddingBottom">10dp</item>
+<item name="android:visibility">gone</item>
+<item name="android:background">#0000ff00</item>
+<!--<item name="android:layout_marginLeft">@dimen/margin_half</item>-->
+</style>
+
+<style name="search_row">
+<item name="android:background">?attr/selectableItemBackground</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:gravity">center_vertical</item>
+</style>
+
+<style name="search_row_input" parent="search_row">
+<item name="android:minHeight">@dimen/new_search_mask_item_height</item>
+<item name="android:gravity">bottom</item>
+</style>
+
+<style name="search_row_check" parent="search_row">
+<item name="android:minHeight">@dimen/new_search_mask_item_height_minus_divider</item>
+<item name="android:gravity">bottom</item>
+</style>
+
+<style name="search_row_check_search" parent="search_row_check">
+<item name="android:minHeight">@dimen/new_search_mask_item_height_search_minus_divider</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:paddingRight">@dimen/margin_half</item>
+</style>
+
+<style name="search_section_header" parent="search_row">
+<item name="android:minHeight">@dimen/new_search_mask_item_height</item>
+</style>
+
+<style name="footer_textview" parent="search_row">
+<item name="android:textSize">@dimen/textsize_normal</item>
+<item name="android:textColor">@color/text_main_gray</item>
+<item name="android:paddingTop">20dp</item>
+<item name="android:paddingBottom">20dp</item>
+<item name="android:lineSpacingExtra">2dp</item>
+</style>
+
+<style name="detail_section">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:paddingBottom">@dimen/big_edge_margin</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:orientation">vertical</item>
+</style>
+
+<style name="detail_section_start_with_button" parent="detail_section">
+<item name="android:paddingLeft">0dp</item>
+<item name="android:paddingRight">0dp</item>
+</style>
+
+<style name="screen_with_full_padding">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:paddingTop">@dimen/big_edge_margin</item>
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:paddingBottom">@dimen/big_edge_margin</item>
+<item name="android:gravity">top</item>
+<item name="android:orientation">vertical</item>
+</style>
+
+<style name="section_with_full_padding" parent="screen_with_full_padding">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:paddingTop">@dimen/edge_margin</item>
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:paddingBottom">@dimen/edge_margin</item>
+<item name="android:gravity">top</item>
+<item name="android:orientation">vertical</item>
+</style>
+
+<style name="screen_with_vertical_padding" parent="screen_with_full_padding">
+<item name="android:paddingLeft">0dp</item>
+<item name="android:paddingRight">0dp</item>
+</style>
+
+<style name="search_row_no_padding">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:minHeight">@dimen/search_mask_item_height</item>
+<item name="android:gravity">center_vertical</item>
+</style>
+
+<style name="Theme.Splash" parent="android:Theme">
+<item name="android:windowBackground">@drawable/splash_background</item>
+<item name="android:windowNoTitle">true</item>
+</style>
+
+<style name="dashboard_menu_row">
+<item name="android:orientation">vertical</item>
+<item name="android:layout_width">76dp</item>
+<item name="android:layout_height">110dp</item>
+<item name="android:paddingTop">@dimen/margin_half</item>
+<item name="android:gravity">top|center_horizontal</item>
+<item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+</style>
+
+<style name="my_anibis_menu_row">
+<item name="android:orientation">horizontal</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/my_anibis_item_height</item>
+<item name="android:paddingLeft">@dimen/menu_margin</item>
+<item name="android:paddingRight">@dimen/menu_margin</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:background">?attr/selectableItemBackground</item>
+</style>
+
+<style name="dashboard_menu_icon">
+<item name="android:layout_width">@dimen/imgsize_dashboard_icon</item>
+<item name="android:layout_height">@dimen/imgsize_dashboard_icon</item>
+<item name="android:layout_marginLeft">@dimen/margin_half</item>
+<item name="android:layout_marginRight">@dimen/margin_half</item>
+</style>
+
+<style name="dashboard_list_section">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:paddingTop">@dimen/dashboard_section_top_margin</item>
+</style>
+
+<style name="dashboard_menu_margin">
+<item name="android:layout_width">7dp</item>
+<item name="android:layout_height">0dp</item>
+</style>
+
+<style name="dashboard_menu_margin_tablet">
+<item name="android:layout_width">@dimen/dashboard_section_top_margin</item>
+<item name="android:layout_height">0dp</item>
+</style>
+
+<style name="dashboard_list_header">
+<item name="android:orientation">horizontal</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_vertical|bottom</item>
+<item name="android:paddingBottom">@dimen/dashboard_title_bottom_margin</item>
+<item name="android:paddingLeft">@dimen/margin_half</item>
+<item name="android:paddingRight">@dimen/margin_half</item>
+</style>
+
+<style name="dashboard_list_label" parent="textview_semibold">
+<item name="android:layout_width">0dp</item>
+<item name="android:layout_weight">1</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textSize">20sp</item>
+<item name="android:textColor">@color/light_black</item>
+<item name="android:ellipsize">end</item>
+<item name="android:maxLines">1</item>
+ma
+</style>
+
+<style name="dashboard_list_action" parent="textview_clickable_bold">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textAllCaps">true</item>
+<item name="android:clickable">true</item>
+<item name="android:textSize">14sp</item>
+<item name="android:gravity">right</item>
+</style>
+
+<style name="my_anibis_menu_icon">
+<item name="android:layout_width">@dimen/my_anibis_icon</item>
+<item name="android:layout_height">@dimen/my_anibis_icon</item>
+</style>
+
+<style name="btn_primary"/>
+<style name="btn_secondary"/>
+
+<style name="list_title" parent="textview_large">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:textColor">@color/theme_primary</item>
+<item name="android:layout_alignParentBottom">true</item>
+<item name="android:paddingBottom">10dp</item>
+</style>
+
+<style name="simple_dialog">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:paddingTop">@dimen/extra_big_edge_margin</item>
+<item name="android:paddingLeft">@dimen/edge_margin</item>
+<item name="android:paddingRight">@dimen/edge_margin</item>
+<item name="android:paddingBottom">@dimen/edge_margin</item>
+<item name="android:minHeight">130dp</item>
+</style>
+
+<style name="fragment_attribute">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:orientation">vertical</item>
+<item name="android:background">@color/white</item>
+</style>
+
+<style name="search_job_dialog" parent="simple_dialog">
+<item name="android:minHeight">225dp</item>
+</style>
+
+<style name="menu_my_anibis" parent="textview_blue_large">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">left</item>
+<item name="android:layout_marginTop">6dp</item>
+<item name="android:layout_marginBottom">6dp</item>
+<item name="android:layout_marginLeft">@dimen/menu_margin</item>
+<item name="android:lineSpacingExtra">@dimen/extra_spacing_menu_category_text</item>
+</style>
+
+<style name="menu_category" parent = "textview_semibold">
+<item name="android:textSize">@dimen/textsize_smallest</item>
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:lineSpacingExtra">2dp</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_horizontal</item>
+<item name="android:layout_marginTop">0dp</item>
+<item name="android:layout_marginBottom">0dp</item>
+<item name="android:layout_marginLeft">0dp</item>
+</style>
+
+<style name="menu_category_version_four" parent="menu_my_anibis">
+<item name="android:textColor">@color/theme_accent</item>
+<item name="android:layout_marginTop">0dp</item>
+<item name="android:layout_marginBottom">0dp</item>
+<item name="android:layout_marginLeft">0dp</item>
+</style>
+
+<style name="menu_category_small" parent = "menu_category">
+<item name="android:layout_marginLeft">@dimen/margin_half</item>
+<item name="android:layout_marginRight">@dimen/margin_half</item>
+</style>
+
+<style name="menu_navigation_left" parent="menu_my_anibis">
+<item name="android:layout_width">0dp</item>
+<item name="android:layout_weight">1.0</item>
+</style>
+
+<style name="menu_navigation_right">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">left</item>
+<item name="android:layout_marginLeft">7dp</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/main_gray</item>
+</style>
+
+<style name="search_view_container">
+<item name="android:orientation">vertical</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/searchview_container_height</item>
+<item name="android:paddingTop">3dp</item>
+<item name="android:paddingBottom">10dp</item>
+<item name="android:paddingLeft">3dp</item>
+<item name="android:paddingRight">3dp</item>
+</style>
+
+<style name="search_view">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:background">@color/white</item>
+</style>
+
+<style name="MyToolbar" parent="@style/ThemeOverlay.AppCompat">
+<!-- Title text -->
+<item name="android:textColorPrimary">@android:color/white</item>
+
+<!-- Title color in AppCompat.Light  -->
+<item name="android:textColorPrimaryInverse">@android:color/white</item>
+
+<!-- Menu text-->
+<item name="actionMenuTextColor">@android:color/white</item>
+<!-- Overflow -->
+<item name="android:textColorSecondary">@android:color/white</item>
+<!-- This will change drawer icon -->
+<item name="drawerArrowStyle">@style/WhiteDrawerIconStyle</item>
+<!-- background of the  -->
+<!-- <item name="android:background">@color/color_primary</item> -->
+</style>
+<style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+<item name="spinBars">true</item>
+<item name="color">@android:color/white</item>
+</style>
+
+<style name="FloatingLabel" parent="@android:style/TextAppearance" >
+<item name="android:textColor">@color/light_gray</item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+</style>
+
+<style name="FloatingLabelError" parent="@android:style/TextAppearance">
+<item name="android:textColor">@color/error_red </item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+</style>
+
+<style name="FloatingLabelSearch" parent="FloatingLabel" >
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:textColor">@color/black</item>
+</style>
+
+<style name="footerText" parent="search_row">
+<item name="android:textColor">@color/light_gray</item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:paddingTop">20dp</item>
+<item name="android:paddingBottom">20dp</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="ErrorStyle" parent="@android:style/TextAppearance" >
+<item name="android:textColor">@color/main_red</item>
+<item name="android:textSize">@dimen/textsize_smaller</item>
+<item name="android:drawableRight">@drawable/ic_close</item>
+<item name="android:lineSpacingExtra">1dp</item>
+</style>
+
+<style name="promo_check_style" parent="textview">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:maxLines">1</item>
+<item name="android:drawableRight">@drawable/ic_check_green</item>
+<item name="android:drawablePadding">10dp</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:gravity">top</item>
+</style>
+
+    <!--IS 24 copied-->
+<style name="IS24AutoCompleteTextView" parent="@style/Widget.AppCompat.Light.AutoCompleteTextView" />
+
+<style name="textview_rating_question" parent="textview_large">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_horizontal</item>
+<item name="android:paddingBottom">10dp</item>
+<item name="android:paddingLeft">4dp</item>
+<item name="android:paddingRight">4dp</item>
+<item name="android:textStyle">bold</item>
+<item name="android:textColor">@color/text_darker_gray</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:layout_marginRight">@dimen/edge_margin</item>
+<item name="android:layout_marginTop">@dimen/edge_margin</item>
+</style>
+
+<style name="AppTheme" parent="android:Theme.Light" />
+
+<style name="CategoryAnimDialog" parent="DateDialogTheme">
+<item name="android:windowAnimationStyle">@style/CategoryDialogAnimation</item>
+</style>
+
+<style name="CategoryDialogAnimation">
+<item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+<item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+</style>
+
+<style name="BottomSheetTitle">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">56dp</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:textColor">@color/text_bottom_sheet_title</item>
+<item name="android:textSize">16sp</item>
+<item name="android:paddingLeft">16dp</item>
+<item name="android:paddingRight">16dp</item>
+</style>
+
+<style name="list_image_layout">
+<item name="android:layout_width">@dimen/list_item_image_width</item>
+<item name="android:layout_height">@dimen/list_item_image_height</item>
+<item name="android:background">@color/image_gray_bg</item>
+</style>
+
+<style name="dash_board_favorite_image_layout">
+<item name="android:layout_width">@dimen/dashboard_favorite_item_image_width</item>
+<item name="android:layout_height">@dimen/dashboard_favorite_item_image_height</item>
+<item name="android:background">@color/image_gray_bg</item>
+</style>
+
+<style name="detail_no_image_layout">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/list_big_item_no_image_height</item>
+<item name="android:background">@color/image_gray_bg</item>
+<item name="android:gravity">center_vertical</item>
+</style>
+
+<style name="list_image">
+<item name="android:layout_width">@dimen/list_item_image_width</item>
+<item name="android:layout_height">@dimen/list_item_image_height</item>
+<item name="android:baselineAlignBottom">false</item>
+<item name="android:scaleType">centerCrop</item>
+</style>
+
+<style name="gallery_list_image">
+<item name="android:layout_width">@dimen/dashboard_favorite_item_image_width</item>
+<item name="android:layout_height">@dimen/dashboard_favorite_item_image_height</item>
+<item name="android:baselineAlignBottom">false</item>
+<item name="android:scaleType">centerCrop</item>
+</style>
+
+<style name="list_image_loading">
+<item name="android:layout_width">40dp</item>
+<item name="android:layout_height">40dp</item>
+<item name="android:layout_gravity">center</item>
+</style>
+
+<style name="BottomSheetItemLayout">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">48dp</item>
+<item name="android:background">?attr/selectableItemBackground</item>
+<item name="android:clickable">true</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:orientation">horizontal</item>
+<item name="android:paddingLeft">16dp</item>
+<item name="android:paddingRight">16dp</item>
+</style>
+
+<style name="BottomSheetItemIcon">
+<item name="android:layout_width">24dp</item>
+<item name="android:layout_height">24dp</item>
+</style>
+
+<style name="BottomSheetItemText">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_marginLeft">32dp</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:textColor">@color/text_bottom_sheet_item</item>
+<item name="android:textSize">16sp</item>
+</style>
+
+<style name="ListFavoriteIcon">
+<item name="android:layout_width">43dp</item>
+<item name="android:layout_height">38dp</item>
+<item name="android:layout_alignParentTop">true</item>
+<item name="android:layout_alignParentRight">true</item>
+<item name="android:paddingRight">8dp</item>
+<item name="android:paddingBottom">13dp</item>
+<item name="android:paddingLeft">13dp</item>
+<item name="android:paddingTop">3dp</item>
+</style>
+
+<style name="ListViewedIcon">
+<item name="android:layout_width">28dp</item>
+<item name="android:layout_height">19dp</item>
+<item name="android:layout_alignParentBottom">true</item>
+<item name="android:layout_alignParentRight">true</item>
+<item name="android:paddingRight">8dp</item>
+<item name="android:paddingBottom">4dp</item>
+</style>
+
+<style name="BaseButton">
+<item name="android:layout_height">@dimen/base_button_height</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:textAllCaps">true</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin_button</item>
+<item name="android:layout_marginRight">@dimen/edge_margin_button</item>
+<item name="android:minWidth">0dp</item>
+<item name="android:maxLines">1</item>
+</style>
+
+<style name="BlueButton" parent="BaseButton">
+<item name="android:textColor">@drawable/blue_button_text</item>
+<item name="android:background">@drawable/blue_button_bg</item>
+</style>
+
+<style name="BlueButton2Line" parent="BlueButton">
+<item name="android:layout_height">63dp</item>
+<item name="android:maxLines">2</item>
+<item name="android:textAllCaps">false</item>
+</style>
+
+<style name="WhiteButton" parent="BaseButton">
+<item name="android:textColor">@drawable/white_button_text</item>
+<item name="android:background">@drawable/white_button_bg</item>
+</style>
+
+<style name="GreenButton" parent="BaseButton">
+<item name="android:textColor">@drawable/green_button_text</item>
+<item name="android:background">@drawable/green_button_bg</item>
+</style>
+
+<style name="BaseBottomButton">
+<item name="android:textColor">@color/white</item>
+</style>
+
+<style name="BottomGreenButton" parent="BaseBottomButton">
+<item name="android:background">@drawable/green_button_bg</item>
+</style>
+
+<style name="BottomBlueButton" parent="BaseBottomButton">
+<item name="android:background">@drawable/blue_button_bg</item>
+</style>
+
+<style name="BottomPaddingBlueButton" parent="BlueButton">
+<item name="android:layout_marginTop">0dp</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/button_search_job_expand_height</item>
+<item name="android:drawablePadding">-20dp</item>
+<item name="android:paddingLeft">@dimen/margin</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+</style>
+
+<style name="BottomPaddingGreenButton" parent="GreenButton">
+<item name="android:layout_marginTop">0dp</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/button_search_job_expand_height</item>
+<item name="android:drawablePadding">-20dp</item>
+<item name="android:paddingLeft">@dimen/margin</item>
+<item name="android:textSize">@dimen/textsize_normal</item>
+</style>
+
+<style name="menu_version_four_row">
+<item name="android:orientation">horizontal</item>
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">@dimen/dashbard_item_item_version_four_height</item>
+<item name="android:paddingLeft">@dimen/menu_margin</item>
+<item name="android:paddingRight">@dimen/menu_margin</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:background">?attr/selectableItemBackground</item>
+</style>
+
+<style name="menu_version_four_icon">
+<item name="android:layout_width">@dimen/imgsize_dashboard_version_four_icon</item>
+<item name="android:layout_height">@dimen/imgsize_dashboard_version_four_icon</item>
+</style>
+
+
+<style name="button_search_bar_back">
+<item name="android:layout_width">40dp</item>
+<item name="android:layout_height">40dp</item>
+<item name="android:layout_centerVertical">true</item>
+<item name="android:background">?selectableItemBackgroundBorderless</item>
+<item name="android:clickable">true</item>
+<item name="android:padding">12dp</item>
+<item name="android:src">@drawable/ic_back_dark</item>
+<item name="android:layout_marginLeft">4dp</item>
+</style>
+
+
+<style name="search_bar_card_view">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:layout_marginRight">@dimen/toolbar_search_view_layout_margin</item>
+<item name="android:layout_marginTop">@dimen/toolbar_search_view_layout_margin</item>
+<item name="android:layout_marginBottom">@dimen/toolbar_search_view_layout_margin</item>
+<item name="android:layout_marginLeft">@dimen/toolbar_search_view_layout_margin</item>
+</style>
+
+<style name="search_bar_auto_complete_view" parent="IS24AutoCompleteTextView">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:background">@null</item>
+<item name="android:maxLines">1</item>
+<item name="android:popupBackground">@color/white</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:textColorHint">#919191</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:layout_marginLeft">53dp</item>
+<item name="android:inputType">textNoSuggestions|textVisiblePassword</item>
+<item name="android:imeOptions">actionSearch</item>
+<item name="android:dropDownVerticalOffset">2dp</item>
+<item name="android:completionThreshold">3</item>
+</style>
+
+<style name="filter_location_auto_complete_view" parent="IS24AutoCompleteTextView">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:gravity">center_vertical</item>
+<item name="android:maxLines">1</item>
+<item name="android:background">@drawable/white_edit_text_bg_selector</item>
+<item name="android:popupBackground">@color/white</item>
+<item name="android:textColor">@color/black</item>
+<item name="android:textColorHint">#919191</item>
+<item name="android:textSize">@dimen/textsize_large</item>
+<item name="android:contentDescription">apps.all</item>
+<item name="android:inputType">textNoSuggestions|textCapSentences|textVisiblePassword</item>
+<item name="android:imeOptions">actionDone</item>
+<item name="android:dropDownVerticalOffset">2dp</item>
+<item name="android:completionThreshold">3</item>
+<item name="android:layout_marginLeft">@dimen/edge_margin</item>
+<item name="android:layout_marginRight">@dimen/edge_margin</item>
+</style>
+
+<style name="search_bar_auto_complete_delete">
+<item name="android:layout_width">40dp</item>
+<item name="android:layout_height">40dp</item>
+<item name="android:layout_centerVertical">true</item>
+<item name="android:background">?selectableItemBackgroundBorderless</item>
+<item name="android:clickable">true</item>
+<item name="android:padding">13dp</item>
+<item name="android:src">@drawable/ic_x_black</item>
+<item name="android:layout_alignParentRight">true</item>
+<item name="android:layout_marginRight">4dp</item>
+</style>
+
+<style name="filter_location_auto_complete_right_icon">
+<item name="android:layout_width">40dp</item>
+<item name="android:layout_height">48dp</item>
+<item name="android:layout_centerVertical">true</item>
+<item name="android:clickable">true</item>
+<item name="android:layout_alignParentRight">true</item>
+<item name="android:paddingLeft">8dp</item>
+<item name="android:paddingRight">8dp</item>
+<item name="android:paddingTop">8dp</item>
+<item name="android:paddingBottom">16dp</item>
+</style>
+
+<style name="filter_location_auto_complete_delete" parent="filter_location_auto_complete_right_icon">
+<item name="android:src">@drawable/ic_x_black</item>
+</style>
+
+<style name="filter_location_auto_complete_my_location" parent="filter_location_auto_complete_delete">
+<item name="android:src">@drawable/ic_my_location</item>
+</style>
+
+<style name="search_bar_auto_complete_spinner">
+<item name="android:layout_width">25dp</item>
+<item name="android:layout_height">25dp</item>
+<item name="android:layout_marginRight">13dp</item>
+<item name="android:layout_alignParentRight">true</item>
+<item name="android:layout_centerVertical">true</item>
+</style>
+
+<style name="search_bar_search_view" parent="search_view">
+<item name="android:layout_marginRight">-10dp</item>
+<item name="android:layout_width">70dp</item>
+<item name="android:layout_alignParentRight">true</item>
+</style>
+
+<style name="category_selector_list">
+<item name="android:layout_width">match_parent</item>
+<item name="android:layout_height">match_parent</item>
+<item name="android:cacheColorHint">@null</item>
+<item name="android:clickable">true</item>
+<item name="android:descendantFocusability">beforeDescendants</item>
+<item name="android:dividerHeight">0dp</item>
+<item name="android:headerDividersEnabled">true</item>
+<item name="android:footerDividersEnabled">true</item>
+<item name="android:scrollbars">vertical</item>
+<item name="android:clipToPadding">false</item>
+<item name="android:paddingBottom">57dp</item>
+</style>
+
+</resources>

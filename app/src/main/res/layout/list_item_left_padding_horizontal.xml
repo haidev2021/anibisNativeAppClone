@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:minWidth="4dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+<!--    <View style="@style/item_list_divider"/>-->
+
+    <ViewStub
+        android:id="@+id/vgAdvertItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/gallery_promo_layout_margin"/>
+
+</LinearLayout>
